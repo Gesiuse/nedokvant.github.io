@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
     .header{
@@ -142,6 +143,7 @@ span{
     margin-right: 20px;
     align-items: center;
     flex-direction: column;
+   
     
 }
 .main-about-header{
