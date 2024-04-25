@@ -250,21 +250,19 @@ span{
 }
     @media only screen and (max-width: 980px) {
         .nav-header{
-            margin-left: 4px;
+            display: none;
         }
         .nav-links{
-            gap: 5px;
+            gap: 18px;
             flex-wrap: wrap;
 
         }
         .nav-link{
-            font-size: small;
+            font-size: 11px;
         }
-        .nav{
-            gap: 5px;
-        }
+        
         .header-texts{
-            padding: 70px;
+            padding: 40px;
         }
         .main-about-second{
             padding: 1px;
@@ -279,5 +277,11 @@ span{
         }
         .main-about-second-img{
             display: none;
+        }
+        .header-head{
+            font-size: 30px;
+        }
+        .main-direction{
+            width: 340px;
         }
     }
