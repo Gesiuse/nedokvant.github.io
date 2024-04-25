@@ -66,3 +66,10 @@ body{
  
     
 }
+@media only screen and (max-width: 980px) {
+    body{
+        background-image: url(..//img/03-luchshie-yazyki-programmirovaniya.jpg);
+        background-repeat: no-repeat;
+        background-size: 110% 190%;
+    }
+}

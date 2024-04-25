@@ -1,9 +1,4 @@
-if (window.matchMedia("(max-width: 980px)").matches) {
-    var element = document.querySelector('.main-about-second-text');
-    if (element) {
-        element.textContent = "Целью реализации проекта «Недокванториум» является достижение лидирующей позиции Российской Федерации на глобальном рынке информационных технологий. Это достижимо для нас, потому что у нас большое количество проффесиональных преподавателей, новейшее оборудование, отличные условия и многое другое.";
-    }
-} 
+
 function CI() {
     var popup = document.getElementById("CI");
     popup.style.display = "block";
