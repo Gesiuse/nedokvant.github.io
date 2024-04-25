@@ -82,6 +82,8 @@ span{
     transition: 0.3s;
     text-decoration: none;
     text-align: center;
+    color: black;
+    margin-right: 15px;
 }
 .nav-link:hover{
     color:#206afc;
