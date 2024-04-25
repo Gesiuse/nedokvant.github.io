@@ -7,21 +7,42 @@
     <title>Подать заявку на обучение</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" href="assets/ico/U6 (1).ico" type="image/png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/U6 (1).ico">
+<link rel="icon" href="../logo.ico" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../logo.ico">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><body>
+
 </head>
 <body>
     <main>
-        <form class="form">
+        <form class="form" id="applicationForm">
             <h1>Заявка на обучение</h1>
-           <input class="input" required type="text" placeholder="Введите ФИО">
-           <input class="input" required type="text" placeholder="Введите название вашего учебного заведения">
-           <input class="input" required type="date" placeholder="Введите свою дату">
-           <button class="button" type="submit" >Подать заявку</button>
-
+            <input class="input" required type="text" id="fullNameInput" placeholder="Введите ФИО">
+            <input class="input" required type="text" id="institutionInput" placeholder="Введите название вашего учебного заведения">
+            <input class="input" required type="date" id="dateInput" placeholder="Введите свою дату">
+            <button class="button" id="submitButton" type="submit">Подать заявку</button>
+            <a class="form-buttonback" href="../../index.html" type="button">Вернутся</a>
         </form>
+        
     </main>
+    <script>
+       // Находим форму и кнопку отправки
+var form = document.getElementById("applicationForm");
+var submitButton = document.getElementById("submitButton");
+
+
+form.addEventListener("submit", function(event) {
     
+    if (!form.checkValidity()) {
+        
+        event.preventDefault();
+       
+        alert("Пожалуйста, заполните все обязательные поля формы.");
+    } else {
+        window.location.href = "../../index.html";
+        alert("Ваша заявка отправлена!");
+    }
+});
+
+    </script>
 </body>
 </html>
