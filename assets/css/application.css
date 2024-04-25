@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+.form{
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 370px;
+    height: 500px;
+    border-radius: 12px;
+    margin-top: 90px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.input{
+    height: 30px;
+    width: 300px;
+}
+h1{
+    transform: translateY(-80px);
+}
+body{
+    background-image: url(/assets/img/03-luchshie-yazyki-programmirovaniya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
