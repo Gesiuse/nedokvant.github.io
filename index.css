@@ -244,13 +244,13 @@ span{
     height: 280px;
     border-radius: 7px;
     width: 300px;
-    transition: border-color 0.3s; /* Добавляем переход для плавного изменения цвета границы */
-    border: 2px solid transparent; /* Устанавливаем прозрачную границу */
+    transition: border-color 0.3s; 
+    border: 2px solid transparent;
 }
 
-/* Обводка при наведении */
+
 .main-about-second-img:hover {
-    border-color: #206afc; /* Цвет обводки при наведении */
+    border-color: #206afc; 
 }
 .main-about-second-text{
     margin-top: 30px;
