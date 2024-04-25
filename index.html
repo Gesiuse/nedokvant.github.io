@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="assets/logo.ico" type="image/png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/logo.ico">
+    <script src="assets/js/application.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><body>
     
     <nav class="nav">
@@ -58,36 +59,78 @@
             
             
             <div class="main-directions-container">
-                <div class="main-directions-mobile main-direction">
+                <div class="main-directions-mobile main-direction" onclick="mobile()">
                     <img class="main-direction-img" src="assets/img/phone.png">
                     <p class="main-direction-header">Мобильная разработка</p>
                     <p class=" main-direction-text">Данное направление очень актуально в последнее время и оно сможет научить Вас всем аспектам создания мобильных приложений</p>
     
                 </div>
-                <div class="main-directions-administration main-direction">
+                <div class="main-directions-administration main-direction" onclick="administration()">
                     <img class="main-direction-img" src="assets/img/pc.png">
                     <p class="main-direction-header">Системное администрирование</p>
                     <p class=" main-direction-text">Направление «Системное администрирование» поможет ученикам более подробно познакомиться с Компьютерами и их системами. На данном курсе вы научитесь устанавливать ОС, разбирать/собирать ПК и многое другое!</p>
                 </div>
-                <div class="main-directions-ci main-direction">
+                <div class="main-directions-ci main-direction" onclick="CI()">
                     <img class="main-direction-img" src="assets/img/ci.png">
                     <p class="main-direction-header">Изучение C подобных языков</p>
                     <p class=" main-direction-text">Данное направление направлено на изучение таких языков програмиирования, как C#, C+, C++. На данном курсе вы научитесь создавать различные приложения на данных языках программирования разных сложностей!</p>
                 </div>
-                <div class="main-directions-java main-direction">
+                <div class="main-directions-java main-direction" onclick="java()">
                     <img class="main-direction-img" src="assets/img/java.png">
                     <p class="main-direction-header"> Изучения языка Java</p>
                     <p class=" main-direction-text">Во время изучения такого языка программирования, как Java Вы сможете познакомиться с алгоритмами, с созданием приложений и компьютерных игр и многое другое!</p>
                 </div>
-                <div class="main-directions-vr main-direction">
+                <div class="main-directions-vr main-direction" onclick="vr()">
                     <img class="main-direction-img" src="assets/img/vr.png">
                     <p class="main-direction-header">VR</p>
                     <p class=" main-direction-text">Обучение направлено на приобретение навыков работы с устройствами виртуальной (далее VR) и дополненной (далее AR) реальности, камерами 360 градусов, изучение программирования на языке C# и базовые навыки 3D моделирования.</p>
                 </div>
-                <div class="main-directions-python main-direction">
+                <div class="main-directions-python main-direction" onclick="python()">
                     <img class="main-direction-img" src="assets/img/python.png">
                     <p class="main-direction-header">Изучение языка Python</p>
                     <p class=" main-direction-text">На данном курсе Вы сможете познакомиться с понятным и одновременно востребованным языком программирования.Полученные знания и умения подростки смогут использовать при сдаче ЕГЭ, при участии в олимпиадах по разным предметам.</p>
+                </div>
+            </div>
+            <div id="CI" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p class="popup-content-header">Дополнительная информация о направлении:</p>
+                    <p class="popup-content-text">Данное направление направлено на изучение таких языков программирования, как C#, C+, C++.<br>Дни недели: пн, вт, пт, сб<br>Преподаватель - Иосифович Ахмед Ихвильних </p>
+                </div>
+            </div>
+            <div id="mobile" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p class="popup-content-header">Дополнительная информация о направлении:</p>
+                    <p class="popup-content-text">Данное направление направлено на создание мобильных приложений<br><span>Дни недели:</span> пн, вт, пт, сб<br><span>Преподаватель</span> - Козлов Константин Михайлович </p>
+                </div>
+            </div>
+            <div id="administration" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p class="popup-content-header">Дополнительная информация о направлении:</p>
+                    <p class="popup-content-text">Данное направление направлено на подробное изучение компьютеров и их состовляющих.<br><span>Дни недели:</span> вт, чт, пт, вс<br><span>Преподаватель</span> - Петрова Анна Васильевна </p>
+                </div>
+            </div>
+            <div id="java" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p class="popup-content-header">Дополнительная информация о направлении:</p>
+                    <p class="popup-content-text">Данное направление направлено на подробное изучение языка програмиирования Java.<br><span>Дни недели:</span> пн, вт, пт, вс<br><span>Преподаватель</span> - Соколов Артём Игоревич </p>
+                </div>
+            </div>
+            <div id="vr" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p class="popup-content-header">Дополнительная информация о направлении:</p>
+                    <p class="popup-content-text">Данное направление направлено на приобретение навыков работы с устройствами виртуальной (далее VR) и дополненной (далее AR) реальности, камерами 360 градусов и т.д.<br><span>Дни недели:</span> вт, ср, пт, сб<br><span>Преподаватель</span> - Лебедева Мария Александровна </p>
+                </div>
+            </div>
+            <div id="python" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p class="popup-content-header">Дополнительная информация о направлении:</p>
+                    <p class="popup-content-text">Данное направление направлено на подробное изучение языка програмиирования Python<br><span>Дни недели:</span> вт, ср, пт, вс<br><span>Преподаватель</span> - Николаев Евгений Дмитриевич </p>
                 </div>
             </div>
             
@@ -104,16 +147,7 @@
         </div>
         <p class="footer-text">©<span>НЕДО</span>кванториум</p>
     </footer>
-    <script>
-        if (window.matchMedia("(max-width: 980px)").matches) {
-    // Экран имеет ширину до 980px
-    var element = document.querySelector('.main-about-second-text');
-    if (element) {
-        element.textContent = "Целью реализации проекта «Недокванториум» является достижение лидирующей позиции Российской Федерации на глобальном рынке информационных технологий. Это достижимо для нас, потому что у нас большое количество проффесиональных преподавателей, новейшее оборудование, отличные условия и многое другое.";
-    }
-} 
-
-    </script>
+    
     
 </body> 
 </html>
