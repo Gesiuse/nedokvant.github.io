@@ -311,7 +311,7 @@ span{
             padding: 40px;
         }
         .main-about-second{
-            padding: 50px;
+            padding: 65px;
             gap:5px;
             
         }
@@ -332,5 +332,6 @@ span{
         .main-direction{
             width: 340px;
         }
+        
 
     }
