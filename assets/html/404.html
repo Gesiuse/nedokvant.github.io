@@ -10,16 +10,123 @@
 <link rel="icon" href="../error.ico" type="image/png">
     <link rel="apple-touch-icon" sizes="180x180" href="../error.ico">
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
+<script src="../js/application.js"></script>
 </head>
 <body>
+    <nav class="nav">
+        <div class="nav-headers"><img class="nav-img" src="../../logo.png">
+            <p class="nav-header"><span>НЕДО</span>кванториум.Новокузнецк</p></div>
+        <div class="nav-links"> <a href="../../index.html" class="nav-link">Вернутся</a>
+            <a class="nav-link" href="#directions">Направления</a>
+            <a class="nav-link" href="#teachers">Преподаватели</a></div>
+       
+    </nav>
     <main class="main">
        
-        <img class="main-img" src="..//img/frog-grust.jpg">
-        <h1 class="main-header">404</h1>
-        <p>Что-то пошло не так. Возможно данная страница не была создана (или кто-то не захотел её сделать)</p>
-        <a class="main-button" href="../../index.html">Вернутся</a>
-    </main>
+        <div class="main-directions" id="directions">
+            <div class="main-directions-subtitle">
+                <p class="main-directions-subtitle_text">Направления</p>
+                
+            </div>
+            <p class="main-directions-subtitle_header">Наши <span>направления</span></p>
+            
+            
+            <div class="main-directions-container">
+                <div class="main-directions-mobile main-direction" onclick="mobile()">
+                    <img class="main-direction-img" src="../img/phone.png">
+                    <p class="main-direction-header">Мобильная разработка</p>
+                    <p class=" main-direction-text">Данное направление очень актуально в последнее время и оно сможет научить Вас всем аспектам создания мобильных приложений</p>
     
+                </div>
+                <div class="main-directions-administration main-direction" onclick="administration()">
+                    <img class="main-direction-img" src="../img/pc.png">
+                    <p class="main-direction-header">Системное администрирование</p>
+                    <p class=" main-direction-text">Направление «Системное администрирование» поможет ученикам более подробно познакомиться с Компьютерами и их системами. На данном курсе вы научитесь устанавливать ОС, разбирать/собирать ПК и многое другое!</p>
+                </div>
+                <div class="main-directions-ci main-direction" onclick="CI()">
+                    <img class="main-direction-img" src="../img/ci.png">
+                    <p class="main-direction-header">Изучение C подобных языков</p>
+                    <p class=" main-direction-text">Данное направление направлено на изучение таких языков програмиирования, как C#, C+, C++. На данном курсе вы научитесь создавать различные приложения на данных языках программирования разных сложностей!</p>
+                </div>
+                <div class="main-directions-java main-direction" onclick="java()">
+                    <img class="main-direction-img" src="../img/java.png">
+                    <p class="main-direction-header"> Изучения языка Java</p>
+                    <p class=" main-direction-text">Во время изучения такого языка программирования, как Java Вы сможете познакомиться с алгоритмами, с созданием приложений и компьютерных игр и многое другое!</p>
+                </div>
+                <div class="main-directions-vr main-direction" onclick="vr()">
+                    <img class="main-direction-img" src="../img/vr.png">
+                    <p class="main-direction-header">VR</p>
+                    <p class=" main-direction-text">Обучение направлено на приобретение навыков работы с устройствами виртуальной (далее VR) и дополненной (далее AR) реальности, камерами 360 градусов, изучение программирования на языке C# и базовые навыки 3D моделирования.</p>
+                </div>
+                <div class="main-directions-python main-direction" onclick="python()">
+                    <img class="main-direction-img" src="../img/python.png">
+                    <p class="main-direction-header">Изучение языка Python</p>
+                    <p class=" main-direction-text">На данном курсе Вы сможете познакомиться с понятным и одновременно востребованным языком программирования.Полученные знания и умения подростки смогут использовать при сдаче ЕГЭ, при участии в олимпиадах по разным предметам.</p>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="main-teachers" id="teachers">
+            <div class="main-directions-subtitle">
+                <p class="main-directions-subtitle_text">Преподаватели</p>
+                
+            </div>
+            <p class="main-directions-subtitle_header">Наши <span>преподаватели</span></p>
+            <div class="main-directions-container">
+                 <div class="main-direction">
+                    <img class="main-teachers-img" src="../img/teachers.jpg">
+                    <p class="main-direction-header">Николаев Евгений Дмитриевич</p>
+                    <p class=" main-direction-text">Преподаватель по языку програмиированию Python</p>
+    
+                </div>
+                <div class="main-direction">
+                    <img class="main-teachers-img" src="../img/teachers.jpg">
+                    <p class="main-direction-header">Лебедева Мария Александровна</p>
+                    <p class=" main-direction-text">Преподаватель по VR</p>
+    
+                </div>
+                <div class="main-direction">
+                    <img class="main-teachers-img" src="../img/teachers.jpg">
+                    <p class="main-direction-header">Соколов Артём Игоревич</p>
+                    <p class=" main-direction-text">Преподаватель по языку програмиированию Java</p>
+    
+                </div>
+                <div class="main-direction">
+                    <img class="main-teachers-img" src="../img/teachers.jpg">
+                    <p class="main-direction-header">Петрова Анна Васильевна</p>
+                    <p class=" main-direction-text">Преподаватель по системному администрированию</p>
+    
+                </div>
+                <div class="main-direction">
+                    <img class="main-teachers-img" src="../img/teachers.jpg">
+                    <p class="main-direction-header">Иосифович Ахмед Ихвильних </p>
+                    <p class=" main-direction-text">Преподаватель по C подобным языкам программирования</p>
+    
+                </div>
+                <div class="main-direction">
+                    <img class="main-teachers-img" src="../img/teachers.jpg">
+                    <p class="main-direction-header">Козлов Константин Михайлович </p>
+                    <p class=" main-direction-text">Преподаватель по мобильной разработке</p>
+    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="https://t.me/+vNLPC6mtKtQyZmFi" target="_blank"><img src="../img/telegram.png"  class="footer-icon"></a>
+            
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="../img/watsapp.png" class="footer-icon"></a>
+            <a href="https://vk.com/search?q=Rick%20Roll&z=video-127960182_456239022" target="_blank"><img src="../img/vk.png" class="footer-icon"></a>
+            
+            <a href="https://www.tiktok.com/@randomspamvideos25/video/7251387037834595630?lang=ru-RU" target="_blank"><img src="../img/tiktok.png" class="footer-icon"></a>
+        </div>
+        <div class="footer-texts">
+            <p class="footer-text">©<span>НЕДО</span>кванториум 2024г.</p>
+            <p class="footer-text">Нашли баг? Напишите нам в поддержку - <a type="gmail">suppnedokvantorium@gmail.com</a></p>
+        </div>
+       
+    </footer>
 </body>
 </html>
