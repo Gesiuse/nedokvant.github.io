@@ -382,3 +382,8 @@ span{
         
 
     }
+    @media only screen and (max-width: 980px) {
+        .main-about-second{
+            padding: 45px;
+        }
+    }
