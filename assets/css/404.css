@@ -243,6 +243,8 @@ span{
     font-size: large;
     font-weight: bold;
     margin-left: 15px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
 }
 .nav-img{
     height: 40px;
