@@ -405,3 +405,8 @@ span{
             gap:10px;
         }
     }
+    @media only screen and (max-width: 370px) {
+        .footer-mail{
+            font-size: 12px;
+        }
+    }
