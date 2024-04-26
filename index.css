@@ -111,7 +111,7 @@ span{
 .nav-header{
     font-size: large;
     font-weight: bold;
-    margin-left: 35px;
+    margin-left: 15px;
 }
 .nav-links{
    
@@ -328,8 +328,16 @@ span{
     font-weight: bolder;
     font-size: large;
 }
+.nav-img{
+    height: 40px;
+}
+.nav-headers{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
     @media only screen and (max-width: 980px) {
-        .nav-header{
+        .nav-headers{
             display: none;
         }
         .nav{
@@ -343,7 +351,7 @@ span{
 
         }
         .nav-link{
-            font-size: 11px;
+            font-size: 13.5px;
         }
         
         .header-texts{
