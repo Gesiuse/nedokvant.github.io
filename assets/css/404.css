@@ -3,6 +3,7 @@
     font-family: "Open Sans", sans-serif;
     align-items: center;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 .main-img{
     height: 140px;
@@ -267,6 +268,6 @@ span{
     margin-right: 10px;
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: center ;
     }
 }
