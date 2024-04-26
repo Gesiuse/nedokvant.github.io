@@ -92,6 +92,15 @@ p{
 .main-direction-header:hover{
     color: #4e89ff;;
 }
+.footer-mail{
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgba(61, 61, 61, 0.7);
+    transition: 0.3s;
+}
+.footer-mail:hover{
+    color: rgba(61, 61, 61, 1);
+}
 .main-direction:hover{
     .main-direction-header{
         color: #4e89ff;
